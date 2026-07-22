@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ONLY — replace with the official "Verified by Psychology Today"
+     badge embed code from the PT account (Account > Login Settings > Share Profile)
+     before this site goes to production. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Verified by Psychology Today (placeholder)">
+  <circle cx="120" cy="120" r="120" fill="#4a86e8"/>
+  <text x="120" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="2.5" fill="#ffffff" font-weight="600">VERIFIED BY</text>
+  <text x="120" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#ffffff" font-weight="800">Psychology</text>
+  <g transform="translate(0,4)">
+    <circle cx="72" cy="166" r="21" fill="#ffffff"/>
+    <path d="M63 166 l7 7 l12 -16" fill="none" stroke="#e8433a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="100" y="179" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="37" fill="#ffffff" font-weight="800">Today</text>
+  </g>
+</svg>
