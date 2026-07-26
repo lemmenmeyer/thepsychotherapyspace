@@ -159,7 +159,15 @@ article.blog-post .prose{max-width:720px}
 
 /* Footer */
 footer{background:var(--ink);color:#d7d4ce;padding:60px 0 30px;font-size:14px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.2fr 1.4fr;gap:44px;margin-bottom:44px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;margin-bottom:44px}
+.footer-contact{display:flex;flex-direction:column;gap:18px}
+.fc-item{display:flex;gap:14px;align-items:flex-start}
+.fc-ico{flex:none;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;margin-top:2px}
+.fc-ico svg{width:19px;height:19px;fill:none;stroke:#d7d4ce;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.fc-label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff;opacity:.6;margin-bottom:5px}
+.footer-contact p{margin:0 0 3px;line-height:1.45}
+.footer-contact .fc-muted{opacity:.6}
+.footer-contact a{color:#d7d4ce}
 footer .fbrand{font-family:var(--serif);color:#fff;line-height:1.2}
 footer .fbrand .the{font-size:13px;font-style:italic;display:block}
 footer .fbrand .name{font-size:22px;display:block}
@@ -193,6 +201,7 @@ footer a:hover{color:#fff}
   .has-drop>a::after{transform:rotate(45deg)}
   .nav-toggle{display:block}.nav-book-mobile{display:inline-block;margin-left:auto;margin-right:2px;padding:9px 18px;font-size:11px;letter-spacing:.1em}
   .split,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
   .quote-inner{margin:0 auto;background:rgba(248,242,230,.8);padding:30px;border-radius:6px}
 }
 @media (max-width:600px){
@@ -339,37 +348,37 @@ a.card:hover .card-img img{transform:scale(1.04)}
         <p class="fbrand"><span class="the">the</span><span class="name">psychotherapy space</span><span class="tag">— a space to heal, grow &amp; connect —</span></p>
         <p style="margin-top:14px">Compassionate, evidence-based therapy for individuals and couples. In person in Los Angeles &amp; Irvine, online across California, in English and Spanish.</p>
       </div>
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="individual-therapy.html">Individual Therapy</a></li>
-          <li><a href="couples-therapy.html">Couples Therapy</a></li>
-          <li><a href="emdr-therapy.html">EMDR Therapy</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Specialties</h4>
-        <ul>
-          <li><a href="therapy-for-anxiety.html">Anxiety</a></li>
-          <li><a href="therapy-for-depression.html">Depression</a></li>
-          <li><a href="trauma-therapy.html">Trauma &amp; PTSD</a></li>
-          <li><a href="eating-disorder-therapy.html">Eating Disorders</a></li>
-          <li><a href="relationship-issues.html">Relationship Issues</a></li>
-          <li><a href="life-transitions.html">Life Transitions</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>Dr. Mar&iacute;a del Carmen Gutierrez, PhD</li>
-          <li>8500 Wilshire Blvd, Suite 740, Beverly Hills, CA 90211</li>
-          <li>19712 MacArthur Blvd, Suite 110, Irvine, CA 92612</li>
-          <li>Online across California</li>
-          <li><a href="tel:+12133404737">(213) 340-4737</a></li>
-          <li><a href="mailto:drmaricarmengutierrez@gmail.com">drmaricarmengutierrez@gmail.com</a></li>
-        </ul>
+      <div class="footer-contact">
+        <div class="fc-item">
+          <span class="fc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 0 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div>
+            <span class="fc-label">Offices</span>
+            <p>8500 Wilshire Blvd, Suite 740, Beverly Hills, CA 90211</p>
+            <p>19712 MacArthur Blvd, Suite 110, Irvine, CA 92612</p>
+            <p class="fc-muted">Online across California</p>
+          </div>
+        </div>
+        <div class="fc-item">
+          <span class="fc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5 9 4l1 3.6-2 1.4a11 11 0 0 0 5 5l1.4-2 3.6 1 .5 2.5a2 2 0 0 1-2 2A15 15 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg></span>
+          <div>
+            <span class="fc-label">Call or Text</span>
+            <p><a href="tel:+12133404737">(213) 340-4737</a></p>
+          </div>
+        </div>
+        <div class="fc-item">
+          <span class="fc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg></span>
+          <div>
+            <span class="fc-label">Email</span>
+            <p><a href="mailto:drmaricarmengutierrez@gmail.com">drmaricarmengutierrez@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="fc-item">
+          <span class="fc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3.2 1.9"/></svg></span>
+          <div>
+            <span class="fc-label">Hours</span>
+            <p>Mon&ndash;Fri &middot; 9am&ndash;5pm PT</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
