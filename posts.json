@@ -1,5 +1,16 @@
 [
   {
+    "title": "Why Psychodynamic Psychotherapy Can Help When Other Types of Therapy Haven’t Worked",
+    "url": "blog-why-psychodynamic-therapy-helps.html",
+    "category": "Individual Therapy",
+    "excerpt": "Done therapy but keep hitting the same patterns? Why a psychodynamic approach looks beneath the symptoms to the deeper emotional roots.",
+    "image": "assets/blog-psychodynamic-therapy.jpg",
+    "topics": [
+      "individual"
+    ],
+    "date": "2026-07-27"
+  },
+  {
     "title": "Anticipatory Grief: When You’re Mourning Someone Who Is Still Here",
     "url": "blog-anticipatory-grief-mourning-someone-still-here.html",
     "category": "Grief & Loss",
@@ -84,7 +95,7 @@
     "url": "blog-can-attachment-styles-change.html",
     "category": "Relationships",
     "excerpt": "Attachment styles aren’t fixed. How anxious and avoidant patterns can shift toward security—through new relationships and therapy.",
-    "image": "",
+    "image": "assets/blog-attachment-styles.jpg",
     "topics": [
       "relationships",
       "couples"
