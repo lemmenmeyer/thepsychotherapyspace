@@ -89,6 +89,7 @@ h3{font-family:var(--serif);font-weight:500;color:var(--sage);font-size:22px;lin
 .split-img{border-radius:6px;overflow:hidden}
 .split-img img{width:100%;height:100%;object-fit:cover}
 .split .prose h2{margin-bottom:24px}
+@media(min-width:881px){.split-portrait{align-items:stretch}.split-portrait .split-img{align-self:stretch;position:relative;min-height:340px}.split-portrait .split-img img{position:absolute;inset:0;object-position:center 36%}}
 
 /* Card grids */
 .band{background:var(--beige)}
@@ -320,7 +321,7 @@ a.card:hover .card-img img{transform:scale(1.04)}
   <div class="container"><div class="hero-inner"><span class="eyebrow" style="color:#fff">Services</span><h1>Individual Therapy</h1><p>A space that is entirely yours — to be heard without judgment and understand yourself more deeply.</p><a href="contact.html" class="btn">Book a Free Consultation</a></div></div>
 </div>
 <section>
-  <div class="container split">
+  <div class="container split split-portrait">
     <div class="prose reveal">
       <span class="eyebrow">A space that is entirely yours</span>
       <h2>Change is possible.</h2>
