@@ -1,5 +1,41 @@
 [
   {
+    "title": "Grounding Techniques for Anxiety: How to Calm Your Mind and Body",
+    "url": "blog-grounding-techniques-for-anxiety.html",
+    "category": "Anxiety",
+    "excerpt": "Six simple grounding techniques to calm anxiety in the moment — from the 5-4-3-2-1 senses exercise to slow breathing.",
+    "image": "assets/blog-anxiety-grounding.jpg",
+    "topics": ["anxiety"],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "How Trauma Can Affect the Way We See Ourselves",
+    "url": "blog-how-trauma-affects-self-perception.html",
+    "category": "Trauma",
+    "excerpt": "Trauma shapes more than memories — it shapes how we see ourselves. How painful experiences form beliefs, and how healing begins.",
+    "image": "assets/blog-trauma-self.jpg",
+    "topics": ["trauma"],
+    "date": "2026-07-26"
+  },
+  {
+    "title": "Emotional Regulation and Food: Understanding the Connection",
+    "url": "blog-emotional-eating-and-food.html",
+    "category": "Eating Disorders",
+    "excerpt": "Emotional eating isn’t a lack of willpower — it’s a way of coping. Understanding the link between emotions and food.",
+    "image": "assets/blog-emotional-eating.jpg",
+    "topics": ["eating-disorders"],
+    "date": "2026-07-25"
+  },
+  {
+    "title": "Why Do I Misunderstand Other People’s Intentions?",
+    "url": "blog-misunderstanding-others-intentions.html",
+    "category": "Relationships",
+    "excerpt": "We can never truly know what others think — so our minds fill the gaps. How mentalization helps you replace assumptions with curiosity.",
+    "image": "assets/blog-intentions.jpg",
+    "topics": ["relationships"],
+    "date": "2026-07-24"
+  },
+  {
     "title": "How EMDR Therapy Helps You Heal from Trauma",
     "url": "blog-how-emdr-therapy-helps-you-heal-from-trauma.html",
     "category": "Trauma",
