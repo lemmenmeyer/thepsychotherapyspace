@@ -14,7 +14,7 @@
     .then(function (r) { return r.json(); })
     .then(function (posts) {
       posts.sort(function (a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
-      var here = location.pathname.split('/').pop();
+      var here = location.pathname.split('/').pop().replace(/\.html$/, '');
 
       feeds.forEach(function (c) {
         var topics = (c.getAttribute('data-blog-feed') || '').toLowerCase()

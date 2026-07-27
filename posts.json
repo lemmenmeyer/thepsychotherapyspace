@@ -1,7 +1,7 @@
 [
   {
     "title": "Why Psychodynamic Psychotherapy Can Help When Other Types of Therapy Haven’t Worked",
-    "url": "blog-why-psychodynamic-therapy-helps.html",
+    "url": "psychodynamic-therapy",
     "category": "Individual Therapy",
     "excerpt": "Done therapy but keep hitting the same patterns? Why a psychodynamic approach looks beneath the symptoms to the deeper emotional roots.",
     "image": "assets/blog-psychodynamic-therapy.jpg",
@@ -12,7 +12,7 @@
   },
   {
     "title": "Anticipatory Grief: When You’re Mourning Someone Who Is Still Here",
-    "url": "blog-anticipatory-grief-mourning-someone-still-here.html",
+    "url": "anticipatory-grief",
     "category": "Grief & Loss",
     "excerpt": "Grief can begin long before a loss. What anticipatory grief is, why it brings guilt, and how support helps you hold hope and grief at once.",
     "image": "assets/blog-anticipatory-grief.jpg",
@@ -23,7 +23,7 @@
   },
   {
     "title": "Why Depression Can Make Getting Out of Bed Feel So Difficult",
-    "url": "blog-why-depression-makes-getting-out-of-bed-hard.html",
+    "url": "depression-getting-out-of-bed",
     "category": "Depression",
     "excerpt": "Depression is more than sadness—it can make even small tasks feel impossible. Why that happens, why it isn’t laziness, and how therapy helps.",
     "image": "assets/blog-depression-getting-out-of-bed.jpg",
@@ -34,7 +34,7 @@
   },
   {
     "title": "What Really Makes a Relationship Last?",
-    "url": "blog-what-really-makes-a-relationship-last.html",
+    "url": "what-makes-relationships-last",
     "category": "Relationships",
     "excerpt": "Chemistry sparks a relationship—but lasting couples share something more. What research says really makes love last.",
     "image": "assets/blog-what-makes-relationships-last.jpg",
@@ -46,7 +46,7 @@
   },
   {
     "title": "How Trauma Affects the Body",
-    "url": "blog-how-trauma-affects-the-body.html",
+    "url": "trauma-and-the-body",
     "category": "Trauma",
     "excerpt": "Long after a traumatic event ends, the body can still react as if the danger is present. Why that happens, and how healing works.",
     "image": "assets/blog-trauma-and-the-body.jpg",
@@ -58,7 +58,7 @@
   },
   {
     "title": "Psychedelic-Assisted Therapy: What It Is, Who It May Help, and What the Research Says",
-    "url": "blog-psychedelic-assisted-therapy-what-the-research-says.html",
+    "url": "psychedelic-assisted-therapy",
     "category": "Mental Health",
     "excerpt": "Psilocybin, MDMA, and ketamine therapy are making headlines—a balanced, research-based look at what the science actually shows.",
     "image": "assets/blog-psychedelic-assisted-therapy.jpg",
@@ -70,7 +70,7 @@
   },
   {
     "title": "How Anxiety Can Look in Teens and Preteens",
-    "url": "blog-how-anxiety-can-look-in-teens-and-preteens.html",
+    "url": "anxiety-in-teens",
     "category": "Anxiety",
     "excerpt": "Anxiety in young people often shows up as irritability, stomachaches, or avoidance—not obvious worry. How to recognize the signs.",
     "image": "assets/blog-anxiety-in-teens.jpg",
@@ -81,7 +81,7 @@
   },
   {
     "title": "When Should I Seek Therapy for Anxiety?",
-    "url": "blog-when-should-i-seek-therapy-for-anxiety.html",
+    "url": "when-to-seek-anxiety-therapy",
     "category": "Anxiety",
     "excerpt": "You don’t have to be in crisis to benefit from therapy. The signs it may be time to seek support for anxiety.",
     "image": "assets/blog-when-to-seek-anxiety-therapy.jpg",
@@ -92,7 +92,7 @@
   },
   {
     "title": "Can Attachment Styles Change?",
-    "url": "blog-can-attachment-styles-change.html",
+    "url": "attachment-styles-change",
     "category": "Relationships",
     "excerpt": "Attachment styles aren’t fixed. How anxious and avoidant patterns can shift toward security—through new relationships and therapy.",
     "image": "assets/blog-attachment-styles.jpg",
@@ -104,7 +104,7 @@
   },
   {
     "title": "Grounding Techniques for Anxiety: How to Calm Your Mind and Body",
-    "url": "blog-grounding-techniques-for-anxiety.html",
+    "url": "grounding-techniques-anxiety",
     "category": "Anxiety",
     "excerpt": "Six simple grounding techniques to calm anxiety in the moment — from the 5-4-3-2-1 senses exercise to slow breathing.",
     "image": "assets/blog-anxiety-grounding.jpg",
@@ -115,7 +115,7 @@
   },
   {
     "title": "How Trauma Can Affect the Way We See Ourselves",
-    "url": "blog-how-trauma-affects-self-perception.html",
+    "url": "how-trauma-affects-self-image",
     "category": "Trauma",
     "excerpt": "Trauma shapes more than memories — it shapes how we see ourselves. How painful experiences form beliefs, and how healing begins.",
     "image": "assets/blog-trauma-self.jpg",
@@ -126,7 +126,7 @@
   },
   {
     "title": "Emotional Regulation and Food: Understanding the Connection",
-    "url": "blog-emotional-eating-and-food.html",
+    "url": "emotional-eating",
     "category": "Eating Disorders",
     "excerpt": "Emotional eating isn’t a lack of willpower — it’s a way of coping. Understanding the link between emotions and food.",
     "image": "assets/blog-emotional-eating.jpg",
@@ -137,7 +137,7 @@
   },
   {
     "title": "Why Do I Misunderstand Other People’s Intentions?",
-    "url": "blog-misunderstanding-others-intentions.html",
+    "url": "misreading-others-intentions",
     "category": "Relationships",
     "excerpt": "We can never truly know what others think — so our minds fill the gaps. How mentalization helps you replace assumptions with curiosity.",
     "image": "assets/blog-intentions.jpg",
@@ -148,7 +148,7 @@
   },
   {
     "title": "How EMDR Therapy Helps You Heal from Trauma",
-    "url": "blog-how-emdr-therapy-helps-you-heal-from-trauma.html",
+    "url": "emdr-therapy-for-trauma",
     "category": "Trauma",
     "excerpt": "EMDR helps the brain reprocess memories that feel “stuck” — here’s how it works and what to expect.",
     "image": "assets/blog-heal.jpg",
@@ -160,7 +160,7 @@
   },
   {
     "title": "How to Prepare Mentally and Emotionally for EMDR Therapy",
-    "url": "blog-how-to-prepare-for-emdr-therapy.html",
+    "url": "prepare-for-emdr-therapy",
     "category": "EMDR",
     "excerpt": "Practical ways to feel grounded and ready before beginning EMDR — from coping skills to pacing.",
     "image": "assets/blog-prepare.jpg",
