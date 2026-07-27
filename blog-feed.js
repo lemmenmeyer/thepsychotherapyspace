@@ -19,7 +19,8 @@
       feeds.forEach(function (c) {
         var topics = (c.getAttribute('data-blog-feed') || '').toLowerCase()
           .split(',').map(function (s) { return s.trim(); }).filter(Boolean);
-        var limit = parseInt(c.getAttribute('data-limit') || '3', 10);
+        var limitAttr = c.getAttribute('data-limit');
+        var limit = limitAttr ? parseInt(limitAttr, 10) : Infinity;
         var withImg = c.getAttribute('data-images') === 'true';
         var showAll = !topics.length || topics.indexOf('all') > -1 || topics.indexOf('latest') > -1;
 
