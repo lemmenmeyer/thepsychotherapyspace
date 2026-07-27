@@ -374,7 +374,7 @@ a.card:hover .card-img img{transform:scale(1.04)}
   <div class="container">
     <span class="eyebrow reveal">From the blog</span>
     <h2 class="reveal">Related articles</h2>
-    <div class="cards"><a class="post-card reveal" href="blog-how-emdr-therapy-helps-you-heal-from-trauma.html"><span class="cat">Trauma</span><h3>How EMDR Therapy Helps You Heal from Trauma</h3><p>EMDR helps the brain reprocess memories that feel “stuck” — here’s how it works and what to expect.</p></a><a class="post-card reveal" href="blog-how-to-prepare-for-emdr-therapy.html"><span class="cat">EMDR</span><h3>How to Prepare Mentally and Emotionally for EMDR Therapy</h3><p>Practical ways to feel grounded and ready before beginning EMDR — from coping skills to pacing.</p></a></div>
+    <div class="cards" data-blog-feed="anxiety" data-limit="2"><a class="post-card reveal" href="blog-how-emdr-therapy-helps-you-heal-from-trauma.html"><span class="cat">Trauma</span><h3>How EMDR Therapy Helps You Heal from Trauma</h3><p>EMDR helps the brain reprocess memories that feel “stuck” — here’s how it works and what to expect.</p></a><a class="post-card reveal" href="blog-how-to-prepare-for-emdr-therapy.html"><span class="cat">EMDR</span><h3>How to Prepare Mentally and Emotionally for EMDR Therapy</h3><p>Practical ways to feel grounded and ready before beginning EMDR — from coping skills to pacing.</p></a></div>
     <p style="margin-top:28px"><a class="btn btn-outline" href="blog.html">Explore the blog</a></p>
   </div>
 </section>
@@ -446,5 +446,6 @@ const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.tar
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 
+<script src="blog-feed.js" defer></script>
 </body>
 </html>
