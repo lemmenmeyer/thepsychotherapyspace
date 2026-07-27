@@ -1,11 +1,105 @@
 [
   {
+    "title": "Anticipatory Grief: When You’re Mourning Someone Who Is Still Here",
+    "url": "blog-anticipatory-grief-mourning-someone-still-here.html",
+    "category": "Grief & Loss",
+    "excerpt": "Grief can begin long before a loss. What anticipatory grief is, why it brings guilt, and how support helps you hold hope and grief at once.",
+    "image": "assets/blog-anticipatory-grief.jpg",
+    "topics": [
+      "life-transitions"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "Why Depression Can Make Getting Out of Bed Feel So Difficult",
+    "url": "blog-why-depression-makes-getting-out-of-bed-hard.html",
+    "category": "Depression",
+    "excerpt": "Depression is more than sadness—it can make even small tasks feel impossible. Why that happens, why it isn’t laziness, and how therapy helps.",
+    "image": "assets/blog-depression-getting-out-of-bed.jpg",
+    "topics": [
+      "depression"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "What Really Makes a Relationship Last?",
+    "url": "blog-what-really-makes-a-relationship-last.html",
+    "category": "Relationships",
+    "excerpt": "Chemistry sparks a relationship—but lasting couples share something more. What research says really makes love last.",
+    "image": "assets/blog-what-makes-relationships-last.jpg",
+    "topics": [
+      "relationships",
+      "couples"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "How Trauma Affects the Body",
+    "url": "blog-how-trauma-affects-the-body.html",
+    "category": "Trauma",
+    "excerpt": "Long after a traumatic event ends, the body can still react as if the danger is present. Why that happens, and how healing works.",
+    "image": "assets/blog-trauma-and-the-body.jpg",
+    "topics": [
+      "trauma",
+      "emdr"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "Psychedelic-Assisted Therapy: What It Is, Who It May Help, and What the Research Says",
+    "url": "blog-psychedelic-assisted-therapy-what-the-research-says.html",
+    "category": "Mental Health",
+    "excerpt": "Psilocybin, MDMA, and ketamine therapy are making headlines—a balanced, research-based look at what the science actually shows.",
+    "image": "assets/blog-psychedelic-assisted-therapy.jpg",
+    "topics": [
+      "depression",
+      "trauma"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "How Anxiety Can Look in Teens and Preteens",
+    "url": "blog-how-anxiety-can-look-in-teens-and-preteens.html",
+    "category": "Anxiety",
+    "excerpt": "Anxiety in young people often shows up as irritability, stomachaches, or avoidance—not obvious worry. How to recognize the signs.",
+    "image": "assets/blog-anxiety-in-teens.jpg",
+    "topics": [
+      "anxiety"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "When Should I Seek Therapy for Anxiety?",
+    "url": "blog-when-should-i-seek-therapy-for-anxiety.html",
+    "category": "Anxiety",
+    "excerpt": "You don’t have to be in crisis to benefit from therapy. The signs it may be time to seek support for anxiety.",
+    "image": "assets/blog-when-to-seek-anxiety-therapy.jpg",
+    "topics": [
+      "anxiety"
+    ],
+    "date": "2026-07-27"
+  },
+  {
+    "title": "Can Attachment Styles Change?",
+    "url": "blog-can-attachment-styles-change.html",
+    "category": "Relationships",
+    "excerpt": "Attachment styles aren’t fixed. How anxious and avoidant patterns can shift toward security—through new relationships and therapy.",
+    "image": "",
+    "topics": [
+      "relationships",
+      "couples"
+    ],
+    "date": "2026-07-27"
+  },
+  {
     "title": "Grounding Techniques for Anxiety: How to Calm Your Mind and Body",
     "url": "blog-grounding-techniques-for-anxiety.html",
     "category": "Anxiety",
     "excerpt": "Six simple grounding techniques to calm anxiety in the moment — from the 5-4-3-2-1 senses exercise to slow breathing.",
     "image": "assets/blog-anxiety-grounding.jpg",
-    "topics": ["anxiety"],
+    "topics": [
+      "anxiety"
+    ],
     "date": "2026-07-27"
   },
   {
@@ -14,7 +108,9 @@
     "category": "Trauma",
     "excerpt": "Trauma shapes more than memories — it shapes how we see ourselves. How painful experiences form beliefs, and how healing begins.",
     "image": "assets/blog-trauma-self.jpg",
-    "topics": ["trauma"],
+    "topics": [
+      "trauma"
+    ],
     "date": "2026-07-26"
   },
   {
@@ -23,7 +119,9 @@
     "category": "Eating Disorders",
     "excerpt": "Emotional eating isn’t a lack of willpower — it’s a way of coping. Understanding the link between emotions and food.",
     "image": "assets/blog-emotional-eating.jpg",
-    "topics": ["eating-disorders"],
+    "topics": [
+      "eating-disorders"
+    ],
     "date": "2026-07-25"
   },
   {
@@ -32,7 +130,9 @@
     "category": "Relationships",
     "excerpt": "We can never truly know what others think — so our minds fill the gaps. How mentalization helps you replace assumptions with curiosity.",
     "image": "assets/blog-intentions.jpg",
-    "topics": ["relationships"],
+    "topics": [
+      "relationships"
+    ],
     "date": "2026-07-24"
   },
   {
@@ -41,7 +141,10 @@
     "category": "Trauma",
     "excerpt": "EMDR helps the brain reprocess memories that feel “stuck” — here’s how it works and what to expect.",
     "image": "assets/blog-heal.jpg",
-    "topics": ["trauma", "emdr"],
+    "topics": [
+      "trauma",
+      "emdr"
+    ],
     "date": "2026-07-20"
   },
   {
@@ -50,7 +153,10 @@
     "category": "EMDR",
     "excerpt": "Practical ways to feel grounded and ready before beginning EMDR — from coping skills to pacing.",
     "image": "assets/blog-prepare.jpg",
-    "topics": ["emdr", "anxiety"],
+    "topics": [
+      "emdr",
+      "anxiety"
+    ],
     "date": "2026-07-10"
   }
 ]
