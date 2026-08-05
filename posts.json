@@ -1,5 +1,62 @@
 [
   {
+    "title": "Why Do I Feel Responsible for Other People's Emotions? Understanding Guilt and Boundaries",
+    "url": "guilt-and-setting-boundaries",
+    "category": "Relationships",
+    "excerpt": "If saying no brings guilt and you feel responsible for others' feelings, there's a reason. How to set boundaries without over-apologizing.",
+    "image": "assets/blog-guilt-boundaries.jpg",
+    "topics": [
+      "relationships"
+    ],
+    "date": "2026-08-05"
+  },
+  {
+    "title": "Trauma and Anger: Why Am I So Irritable After Trauma?",
+    "url": "trauma-and-anger",
+    "category": "Trauma",
+    "excerpt": "Trauma doesn't always look like fear—sometimes it's anger. Why small things spark big reactions, and how therapy helps you understand it.",
+    "image": "assets/blog-trauma-anger.jpg",
+    "topics": [
+      "trauma"
+    ],
+    "date": "2026-08-05"
+  },
+  {
+    "title": "Why Do I Feel Unsafe Even When I'm Safe? Understanding Trauma and Hypervigilance",
+    "url": "feeling-unsafe-when-safe",
+    "category": "Trauma",
+    "excerpt": "Feeling on guard even when nothing's wrong? Why trauma keeps the body on alert—and how therapy helps you feel safe again.",
+    "image": "assets/blog-hypervigilance.jpg",
+    "topics": [
+      "trauma",
+      "anxiety"
+    ],
+    "date": "2026-08-05"
+  },
+  {
+    "title": "Why Do I Shut Down During Conflict? Understanding the Freeze Response",
+    "url": "shutting-down-during-conflict",
+    "category": "Trauma",
+    "excerpt": "Going blank or numb mid-argument isn't not caring—it can be a freeze response. Why conflict feels threatening, and how to stay present.",
+    "image": "assets/blog-freeze-response.jpg",
+    "topics": [
+      "trauma",
+      "relationships"
+    ],
+    "date": "2026-08-05"
+  },
+  {
+    "title": "How Childhood Sexual Abuse Can Affect Adults Years Later",
+    "url": "childhood-sexual-abuse-adult-effects",
+    "category": "Trauma",
+    "excerpt": "The effects of childhood sexual abuse can surface years later—in trust, intimacy, and safety. How it shapes survivors, and how healing begins.",
+    "image": "assets/blog-childhood-sexual-abuse.jpg",
+    "topics": [
+      "trauma"
+    ],
+    "date": "2026-08-05"
+  },
+  {
     "title": "Why Psychodynamic Psychotherapy Can Help When Other Types of Therapy Haven’t Worked",
     "url": "psychodynamic-therapy",
     "category": "Individual Therapy",
