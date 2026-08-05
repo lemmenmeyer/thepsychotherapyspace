@@ -1,3 +1,9 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# local hero-video trial (not for the live site)
+hero-video-trial.html
+assets/hero-flores.mp4
+assets/hero-flores-poster.jpg
+.claude/
