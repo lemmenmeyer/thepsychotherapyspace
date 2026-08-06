@@ -335,19 +335,24 @@ a.card:hover .card-img img{transform:scale(1.04)}
       </ul>
     </div>
     <div class="reveal">
-      <form action="#" method="post" aria-label="Contact form">
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+        <input type="hidden" name="access_key" value="031329a9-bbe0-477f-a06b-9c51d0f12892">
+        <input type="hidden" name="subject" value="New consultation request — The Psychotherapy Space">
+        <input type="hidden" name="from_name" value="The Psychotherapy Space website">
+        <input type="checkbox" name="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
         <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
         <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field"><label for="f-subject">I'm interested in</label>
-          <select id="f-subject" name="subject">
+          <select id="f-subject" name="interested in">
             <option>Anxiety</option><option>Depression</option><option>Trauma &amp; PTSD</option>
             <option>Eating Disorders</option><option>Couples Therapy</option><option>EMDR Therapy</option>
-            <option>Relationship Issues</option><option>Life Transitions</option><option>Something else</option>
+            <option>Relationship Issues</option><option>Life Transitions</option><option>Psychological Assessments</option><option>Something else</option>
           </select>
         </div>
         <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message"></textarea></div>
         <button class="btn" type="submit">Send message</button>
+        <p id="formStatus" class="form-note" role="status" aria-live="polite" style="display:none;margin-top:14px"></p>
         <p class="form-note">Please don't include sensitive clinical details in this form. If you are experiencing a mental health emergency, call 988 (Suicide &amp; Crisis Lifeline) or 911.</p>
       </form>
     </div>
@@ -411,6 +416,38 @@ document.querySelectorAll('.has-drop>a').forEach(a=>{a.addEventListener('click',
 document.querySelectorAll('.faq-item>button').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,ans=item.querySelector('.faq-answer'),was=item.classList.contains('open');item.closest('.faq-list').querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-answer').style.maxHeight=null;o.querySelector('button').setAttribute('aria-expanded','false');});if(!was){item.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px';btn.setAttribute('aria-expanded','true');}});});
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<script>
+(function(){
+  var form=document.getElementById('contactForm'); if(!form) return;
+  var status=document.getElementById('formStatus');
+  var btn=form.querySelector('button[type="submit"]');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    status.style.display='none';
+    var orig=btn.textContent; btn.disabled=true; btn.textContent='Sending…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+      .then(function(r){return r.json();})
+      .then(function(res){
+        if(res.success){
+          form.reset();
+          status.style.color='var(--sage)';
+          status.textContent='Thank you — your message has been sent. I’ll be in touch soon.';
+        }else{
+          status.style.color='#b4472f';
+          status.textContent='Sorry, something went wrong. Please email drmaricarmengutierrez@gmail.com or call (213) 340-4737.';
+        }
+        status.style.display='block';
+      })
+      .catch(function(){
+        status.style.color='#b4472f';
+        status.textContent='Sorry, something went wrong. Please email drmaricarmengutierrez@gmail.com or call (213) 340-4737.';
+        status.style.display='block';
+      })
+      .then(function(){ btn.disabled=false; btn.textContent=orig; });
+  });
+})();
 </script>
 
 </body>
