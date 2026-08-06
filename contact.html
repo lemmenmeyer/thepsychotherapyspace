@@ -355,6 +355,13 @@ a.card:hover .card-img img{transform:scale(1.04)}
         <p id="formStatus" class="form-note" role="status" aria-live="polite" style="display:none;margin-top:14px"></p>
         <p class="form-note">Please don't include sensitive clinical details in this form. If you are experiencing a mental health emergency, call 988 (Suicide &amp; Crisis Lifeline) or 911.</p>
       </form>
+      <div id="formSuccess" role="status" aria-live="polite" style="display:none;text-align:center;background:var(--cream);border:1px solid var(--sage-soft);border-radius:10px;padding:48px 30px;box-shadow:0 14px 34px rgba(74,74,74,.1)">
+        <div style="width:66px;height:66px;margin:0 auto 22px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3 style="font-family:var(--serif);font-weight:400;color:var(--sage);font-size:clamp(24px,3vw,30px);margin-bottom:14px">Thank you — your message is on its way</h3>
+        <p style="font-size:15.5px;max-width:440px;margin:0 auto;line-height:1.7">I&rsquo;ve received your message and will be in touch within 24 hours. If it&rsquo;s urgent, call or text <a href="tel:+12133404737">(213)&nbsp;340-4737</a>.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -432,8 +439,11 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
       .then(function(res){
         if(res.success){
           form.reset();
-          status.style.color='var(--sage)';
-          status.textContent='Thank you — your message has been sent. I’ll be in touch soon.';
+          form.style.display='none';
+          var ok=document.getElementById('formSuccess');
+          ok.style.display='block';
+          var rv=ok.closest('.reveal'); if(rv) rv.classList.add('visible');
+          ok.scrollIntoView({behavior:'smooth',block:'center'});
         }else{
           status.style.color='#b4472f';
           status.textContent='Sorry, something went wrong. Please email drmaricarmengutierrez@gmail.com or call (213) 340-4737.';
