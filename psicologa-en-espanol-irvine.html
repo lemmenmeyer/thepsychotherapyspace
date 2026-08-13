@@ -350,7 +350,7 @@ a.card:hover .card-img img{transform:scale(1.04)}
         <span class="eyebrow">Terapia en Español</span>
         <h1>Psicóloga en Español en Irvine, Orange County y Los Ángeles</h1>
         <p>Terapia y evaluaciones psicológicas en español e inglés para adultos, adolescentes y parejas en Irvine, Orange County y Los Ángeles, con telehealth disponible en todo California.</p>
-        <a href="contact.html" class="btn">Reserva una consulta gratuita</a>
+        <a href="#contacto" class="btn">Reserva una consulta gratuita</a>
       </div>
       <div class="intro-photo reveal">
         <img src="assets/individual-office.jpg" width="1000" height="1333" alt="Dra. María del Carmen Gutiérrez, PhD, psicóloga bilingüe en Irvine y Los Ángeles">
@@ -398,7 +398,58 @@ a.card:hover .card-img img{transform:scale(1.04)}
   <div class="container reveal">
     <h2>Da el primer paso hacia sentirte mejor</h2>
     <p class="sub">Agenda una consulta gratuita para conocernos y ver cómo puedo acompañarte, en español o en inglés.</p>
-    <a href="contact.html" class="btn">Reserva una consulta gratuita</a>
+    <a href="#contacto" class="btn">Reserva una consulta gratuita</a>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:620px;margin:0 auto">
+      <span class="eyebrow centered">Contacto</span>
+      <h2>Reserva tu consulta gratuita</h2>
+      <p style="margin-top:16px">Escríbeme para agendar tu consulta gratuita o hacer cualquier pregunta. Respondo dentro de 24 horas, en español o en inglés.</p>
+    </div>
+    <div class="contact-grid" style="margin-top:54px">
+      <div class="reveal">
+        <ul class="contact-info" style="margin-top:6px">
+          <li><strong>Teléfono / Texto</strong><br><a href="tel:+12133404737">(213) 340-4737</a></li>
+          <li><strong>Correo</strong><br><a href="mailto:drmaricarmengutierrez@gmail.com">drmaricarmengutierrez@gmail.com</a></li>
+          <li><strong>Consultorio en Irvine</strong><br>19712 MacArthur Blvd, Suite 110, Irvine, CA 92612</li>
+          <li><strong>Consultorio en Los &Aacute;ngeles</strong><br>8500 Wilshire Blvd, Suite 740, Beverly Hills, CA 90211</li>
+          <li><strong>En l&iacute;nea</strong><br>Sesiones por video seguras en todo California</li>
+          <li><strong>Idiomas</strong><br>Espa&ntilde;ol &amp; Ingl&eacute;s</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <form id="contactFormEs" action="https://api.web3forms.com/submit" method="POST" aria-label="Formulario de contacto">
+          <input type="hidden" name="access_key" value="031329a9-bbe0-477f-a06b-9c51d0f12892">
+          <input type="hidden" name="subject" value="Nueva solicitud de consulta (Espa&ntilde;ol) — The Psychotherapy Space">
+          <input type="hidden" name="from_name" value="The Psychotherapy Space — p&aacute;gina en espa&ntilde;ol">
+          <input type="checkbox" name="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field"><label for="es-name">Nombre</label><input id="es-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="es-email">Correo electr&oacute;nico</label><input id="es-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="es-phone">Tel&eacute;fono</label><input id="es-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="es-subject">Me interesa</label>
+            <select id="es-subject" name="interested in">
+              <option>Ansiedad</option><option>Depresi&oacute;n</option><option>Trauma y TEPT</option>
+              <option>Terapia de pareja</option><option>Terapia EMDR</option><option>Evaluaciones psicol&oacute;gicas</option>
+              <option>Transiciones de vida</option><option>Duelo</option><option>Otra cosa</option>
+            </select>
+          </div>
+          <div class="field"><label for="es-msg">Mensaje</label><textarea id="es-msg" name="message"></textarea></div>
+          <button class="btn" type="submit">Enviar mensaje</button>
+          <p id="formStatusEs" class="form-note" role="status" aria-live="polite" style="display:none;margin-top:14px"></p>
+          <p class="form-note">Por favor no incluyas detalles cl&iacute;nicos delicados en este formulario. Si est&aacute;s pasando por una emergencia de salud mental, llama al 988 (L&iacute;nea de Crisis y Suicidio) o al 911.</p>
+        </form>
+        <div id="formSuccessEs" role="status" aria-live="polite" style="display:none;text-align:center;background:var(--cream);border:1px solid var(--sage-soft);border-radius:10px;padding:48px 30px;box-shadow:0 14px 34px rgba(74,74,74,.1)">
+          <div style="width:66px;height:66px;margin:0 auto 22px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3 style="font-family:var(--serif);font-weight:400;color:var(--sage);font-size:clamp(24px,3vw,30px);margin-bottom:14px">Gracias — tu mensaje est&aacute; en camino</h3>
+          <p style="font-size:15.5px;max-width:440px;margin:0 auto;line-height:1.7">He recibido tu mensaje y me pondr&eacute; en contacto contigo dentro de 24 horas. Si es urgente, llama o env&iacute;a un texto al <a href="tel:+12133404737">(213)&nbsp;340-4737</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 </main>
@@ -460,6 +511,36 @@ const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.tar
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 
+<script>
+(function(){
+  var form=document.getElementById('contactFormEs'); if(!form) return;
+  var status=document.getElementById('formStatusEs');
+  var btn=form.querySelector('button[type="submit"]');
+  var errMsg='Lo sentimos, algo salió mal. Escribe a drmaricarmengutierrez@gmail.com o llama al (213) 340-4737.';
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    status.style.display='none';
+    var orig=btn.textContent; btn.disabled=true; btn.textContent='Enviando…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+      .then(function(r){return r.json();})
+      .then(function(res){
+        if(res.success){
+          form.reset();
+          form.style.display='none';
+          var ok=document.getElementById('formSuccessEs');
+          ok.style.display='block';
+          var rv=ok.closest('.reveal'); if(rv) rv.classList.add('visible');
+          ok.scrollIntoView({behavior:'smooth',block:'center'});
+        }else{
+          status.style.color='#b4472f'; status.textContent=errMsg;
+        }
+        status.style.display='block';
+      })
+      .catch(function(){ status.style.color='#b4472f'; status.textContent=errMsg; status.style.display='block'; })
+      .then(function(){ btn.disabled=false; btn.textContent=orig; });
+  });
+})();
+</script>
 <script src="blog-feed.js" defer></script>
 </body>
 </html>
