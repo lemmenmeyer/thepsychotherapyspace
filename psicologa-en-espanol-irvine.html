@@ -77,23 +77,13 @@ nav.main-nav .dropdown a{display:block;padding:9px 22px;font-size:13.5px}
 .page-hero .hero-inner{padding:80px 0}
 .page-hero p{margin-bottom:30px}
 
-/* Landing intro (full uncropped portrait, no cover-crop hero) */
-.intro{background:var(--cream);padding:78px 0 66px;border-bottom:1px solid var(--line)}
-.intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,5vw,72px);align-items:center}
-.intro-text h1{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:clamp(34px,4.6vw,52px);line-height:1.14;margin:4px 0 20px}
-.intro-text p{font-size:16px;line-height:1.8;max-width:480px;margin-bottom:28px;color:var(--text)}
-.intro-photo{position:relative}
-.intro-photo img{width:100%;height:auto;display:block;border-radius:10px;box-shadow:0 22px 48px rgba(74,74,74,.17)}
-.intro-photo::before{content:"";position:absolute;left:-18px;bottom:-18px;width:62%;height:62%;background:var(--beige);border-radius:10px;z-index:-1}
-@media(max-width:860px){
-  .intro{padding:52px 0 48px}
-  .intro-grid{grid-template-columns:1fr;gap:34px}
-  .intro-photo{max-width:380px;margin:0 auto;order:-1}
-  .intro-photo::before{display:none}
-  .intro-text{text-align:center}
-  .intro-text p{margin-left:auto;margin-right:auto}
-  .intro-text .eyebrow::after{margin-left:auto;margin-right:auto}
-}
+/* Landing intro (centered, text-only hero) */
+.intro{background:var(--cream);padding:96px 0 88px;border-bottom:1px solid var(--line)}
+.intro-center{max-width:840px;margin:0 auto;text-align:center}
+.intro-center h1{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:clamp(36px,5vw,56px);line-height:1.12;margin:6px 0 22px}
+.intro-center p{font-size:17px;line-height:1.8;max-width:660px;margin:0 auto 30px;color:var(--text)}
+.intro-center .eyebrow::after{margin-left:auto;margin-right:auto}
+@media(max-width:860px){ .intro{padding:60px 0 54px} }
 
 /* Sections */
 section{padding:88px 0}
@@ -345,15 +335,27 @@ a.card:hover .card-img img{transform:scale(1.04)}
 
 <section class="intro">
   <div class="container">
-    <div class="intro-grid">
-      <div class="intro-text reveal">
-        <span class="eyebrow">Terapia en Español</span>
-        <h1>Psicóloga en Español en Irvine, Orange County y Los Ángeles</h1>
-        <p>Terapia y evaluaciones psicológicas en español e inglés para adultos, adolescentes y parejas en Irvine, Orange County y Los Ángeles, con telehealth disponible en todo California.</p>
-        <a href="#contacto" class="btn">Agenda una llamada</a>
+    <div class="intro-center reveal">
+      <span class="eyebrow">Terapia en Español</span>
+      <h1>Psicóloga en Español en Irvine, Orange County y Los Ángeles</h1>
+      <p>Terapia y evaluaciones psicológicas en español e inglés para adultos, adolescentes y parejas en Irvine, Orange County y Los Ángeles, con telehealth disponible en todo California.</p>
+      <a href="#contacto" class="btn">Agenda una llamada</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="split" style="align-items:center">
+      <div class="reveal">
+        <img src="assets/dr-gutierrez-closeup.jpg" width="556" height="670" alt="Dra. María del Carmen Gutiérrez, psicóloga clínica bilingüe" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 18px 42px rgba(74,74,74,.15)">
       </div>
-      <div class="intro-photo reveal">
-        <img src="assets/individual-office.jpg" width="1000" height="1333" alt="Dra. María del Carmen Gutiérrez, PhD, psicóloga bilingüe en Irvine y Los Ángeles">
+      <div class="prose reveal">
+        <span class="eyebrow">Conoce a tu psicóloga</span>
+        <h2>Soy la Dra. María del Carmen Gutiérrez</h2>
+        <p>Soy psicóloga clínica licenciada en California, bilingüe y bicultural. Mi formación profesional se ha desarrollado entre Ciudad de México, Barcelona, Londres y California, lo que me permite comprender cómo nuestra historia personal, nuestras relaciones y nuestro contexto cultural influyen en la vida emocional.</p>
+        <p>Trabajo con adultos, adolescentes y parejas que atraviesan ansiedad, trauma, dificultades en sus relaciones, patrones emocionales repetitivos y transiciones importantes. Mi enfoque integra la terapia psicodinámica y basada en el apego con tratamientos respaldados por evidencia, como EMDR, DBT, CBT y terapia basada en la mentalización.</p>
+        <p>Busco ofrecerte un espacio cálido y reflexivo donde puedas comprender no solo lo que te ocurre, sino también por qué ciertos patrones se repiten y cómo comenzar a transformarlos.</p>
       </div>
     </div>
   </div>
