@@ -530,6 +530,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
       .then(function(r){return r.json();})
       .then(function(res){
         if(res.success){
+          if(window.gtag)gtag('event','contact_submit',{event_category:'contact'});
           form.reset();
           form.style.display='none';
           var ok=document.getElementById('formSuccessEs');
@@ -568,7 +569,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   var SP="https://drmariagutierrez.clientsecure.me/widget-redirect?scopeId=c31ac8ba-4861-4be4-b43c-d2d75a5e1322&scopeGlobal=true&applicationId=7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b";
   var m=document.getElementById('bookModal'); if(!m) return;
   var fr=m.querySelector('.book-modal__frame');
-  function open(){ if(fr.getAttribute('src')!==SP) fr.setAttribute('src',SP); m.classList.add('open'); m.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  function open(){ if(window.gtag)gtag('event','book_click',{event_category:'booking'}); if(fr.getAttribute('src')!==SP) fr.setAttribute('src',SP); m.classList.add('open'); m.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
   function close(){ m.classList.remove('open'); m.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
   document.addEventListener('click',function(e){
     var b=e.target.closest('.js-book'); if(b){ e.preventDefault(); open(); return; }
