@@ -299,6 +299,21 @@ a.card:hover .card-img img{transform:scale(1.04)}
 .cta{position:relative}
 .cta>.container{position:relative;z-index:1}
 .cta-motif{position:absolute;right:-10%;bottom:-58%;height:150%;width:auto;opacity:.09;color:var(--sage);pointer-events:none;z-index:0}
+
+/* Home services (icon cards) */
+.svc-list{max-width:720px;margin:44px auto 0;display:flex;flex-direction:column;gap:20px;text-align:left}
+.svc-card{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 30px;transition:box-shadow .3s ease,transform .3s ease;text-decoration:none}
+.svc-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(74,74,74,.08)}
+.svc-ico{flex:none;width:96px;padding-right:26px;margin-right:26px;border-right:1px solid var(--line);display:flex;justify-content:center;color:var(--sage-soft)}
+.svc-ico svg{width:58px;height:58px}
+.svc-body h3{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:24px;margin:0 0 8px;line-height:1.2}
+.svc-body p{font-size:14.5px;line-height:1.65;color:var(--text);margin:0 0 14px}
+.svc-more{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);border-bottom:1px solid var(--sage-soft);padding-bottom:3px}
+.svc-specialties{max-width:720px;margin:32px auto 0;text-align:center;font-size:14px;color:var(--text)}
+.svc-specialties .lbl{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-right:10px}
+.svc-specialties a{color:var(--text);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s ease}
+.svc-specialties a:hover{border-bottom-color:var(--sage-soft)}
+@media(max-width:560px){.svc-card{padding:22px}.svc-ico{width:74px;padding-right:18px;margin-right:18px}.svc-ico svg{width:46px;height:46px}.svc-body h3{font-size:21px}.svc-specialties{font-size:13px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Psychologist", "name": "The Psychotherapy Space — Dr. María del Carmen Gutierrez, PhD", "description": "Boutique psychotherapy practice offering evidence-based therapy for individuals and couples in Los Angeles, Irvine, and online across California, in English and Spanish.", "url": "https://thepsychotherapyspace.com", "telephone": "+12133404737", "email": "hello@thepsychotherapyspace.com", "address": [{"@type": "PostalAddress", "streetAddress": "8500 Wilshire Blvd, Suite 740", "addressLocality": "Beverly Hills", "addressRegion": "CA", "postalCode": "90211", "addressCountry": "US"}, {"@type": "PostalAddress", "streetAddress": "19712 MacArthur Blvd, Suite 110", "addressLocality": "Irvine", "addressRegion": "CA", "postalCode": "92612", "addressCountry": "US"}], "areaServed": "California", "availableLanguage": ["English", "Spanish"], "medicalSpecialty": "Psychiatric", "knowsAbout": ["Anxiety", "Depression", "Trauma", "PTSD", "EMDR", "Eating Disorders", "Couples Therapy", "Relationship Issues", "Life Transitions"]}</script>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -415,16 +430,35 @@ a.card:hover .card-img img{transform:scale(1.04)}
 
 <section class="band center">
   <div class="container">
-    <span class="eyebrow centered reveal">Specialties</span>
+    <span class="eyebrow centered reveal">Services</span>
     <h2 class="reveal">How we can work together</h2>
-    <p class="reveal" style="max-width:600px;margin:16px auto 0">I provide compassionate, evidence-based therapy for a wide range of emotional and psychological concerns. Explore the areas below to learn more.</p>
-    <div class="grid-3">
-      <a class="card reveal" href="therapy-for-anxiety.html"><div class="card-img"><img src="assets/specialty-anxiety.jpg" alt="A golden coastal path through the dunes" loading="lazy"></div><h3>Anxiety</h3><p>Feel calmer, more in control, and more confident — anxiety is highly treatable.</p><span class="more">Learn more</span></a>
-      <a class="card reveal" href="trauma-therapy.html"><div class="card-img"><img src="assets/specialty-trauma.jpg" alt="Gentle waves reaching the shore" loading="lazy"></div><h3>Trauma &amp; PTSD</h3><p>Heal the invisible wounds. Your past doesn't have to define your future.</p><span class="more">Learn more</span></a>
-      <a class="card reveal" href="eating-disorder-therapy.html"><div class="card-img"><img src="assets/specialty-eating-disorder.jpg" alt="A peaceful natural setting in warm light" loading="lazy"></div><h3>Eating Disorders</h3><p>Transform your relationship with food and your body. Recovery is possible.</p><span class="more">Learn more</span></a>
-      <a class="card reveal" href="relationship-issues.html"><div class="card-img"><img src="assets/specialty-relationships.jpg" alt="Two people walking together outdoors" loading="lazy"></div><h3>Relationship Issues</h3><p>Understand the patterns that keep you stuck and build healthier ways of connecting.</p><span class="more">Learn more</span></a>
-      <a class="card reveal" href="life-transitions.html"><div class="card-img"><img src="assets/specialty-life-transitions.jpg" alt="A coastal path winding toward the horizon" loading="lazy"></div><h3>Life Transitions</h3><p>Find your footing when everything is changing — and turn disruption into growth.</p><span class="more">Learn more</span></a>
+    <div class="svc-list">
+      <a class="svc-card reveal" href="individual-therapy.html">
+        <span class="svc-ico"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="21" r="11"/><path d="M13 53c0-10.5 8.5-19 19-19s19 8.5 19 19"/></svg></span>
+        <div class="svc-body">
+          <h3>Individual Therapy</h3>
+          <p>For adults and teens seeking support with anxiety, trauma, life transitions, and recurring relationship patterns.</p>
+          <span class="svc-more">Explore Individual Therapy</span>
+        </div>
+      </a>
+      <a class="svc-card reveal" href="couples-therapy.html">
+        <span class="svc-ico"><svg viewBox="0 0 72 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="25" cy="19" r="9"/><circle cx="47" cy="19" r="9"/><path d="M10 51c0-8.3 6.7-15 15-15s15 6.7 15 15"/><path d="M32 51c0-8.3 6.7-15 15-15s15 6.7 15 15"/></svg></span>
+        <div class="svc-body">
+          <h3>Couples Therapy</h3>
+          <p>For couples who want to improve communication, understand recurring patterns, and build a more secure connection.</p>
+          <span class="svc-more">Explore Couples Therapy</span>
+        </div>
+      </a>
+      <a class="svc-card reveal" href="psychological-assessments.html">
+        <span class="svc-ico"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="10" width="36" height="45" rx="3"/><path d="M26 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><g transform="translate(22.5 19)"><path d="M0 4.5h4a2.4 2.4 0 1 1 4.8 0H13v4.3a2.4 2.4 0 1 1 0 4.8V18H8.8a2.4 2.4 0 1 0-4.8 0H0v-4.4a2.4 2.4 0 1 0 0-4.8z"/></g><line x1="23" y1="47" x2="41" y2="47"/></svg></span>
+        <div class="svc-body">
+          <h3>ADHD &amp; Autism Evaluations</h3>
+          <p>Comprehensive evaluations for adults and teens seeking diagnostic clarity and practical recommendations.</p>
+          <span class="svc-more">Learn About Evaluations</span>
+        </div>
+      </a>
     </div>
+    <p class="svc-specialties reveal"><span class="lbl">Specialties</span> <a href="therapy-for-anxiety.html">Anxiety</a> &middot; <a href="trauma-therapy.html">Trauma &amp; PTSD</a> &middot; <a href="relationship-issues.html">Relationship Patterns</a> &middot; <a href="life-transitions.html">Life Transitions</a></p>
   </div>
 </section>
 
