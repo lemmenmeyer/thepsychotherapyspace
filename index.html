@@ -283,8 +283,6 @@ a.card:hover .card-img img{transform:scale(1.04)}
 @media (max-width:720px){.hero-anim .hero-inner{padding-top:38vh}}
 /* Rotating-word hero (mock) */
 .hero h1{text-shadow:0 1px 22px rgba(30,32,28,.4)}
-.rotate-word{display:block;font-style:italic;transition:opacity .45s ease,transform .45s ease}
-.rotate-word.out{opacity:0;transform:translateY(10px)}
 
 /* Dandelion animation card */
 .anim-card{position:relative;border:1px solid var(--line);border-radius:6px;overflow:hidden;aspect-ratio:4/4.6;background:#f4f3ec}
@@ -360,22 +358,11 @@ a.card:hover .card-img img{transform:scale(1.04)}
     <source src="assets/home-hero-video.mp4" type="video/mp4">
   </video>
   <div class="container"><div class="hero-inner">
-    <h1>A space to feel <span id="rotateWord" class="rotate-word">grounded</span></h1>
-    <p>Evidence-based therapy and psychological assessments for individuals and couples.</p>
+    <h1>Therapy for Anxiety, Trauma &amp; Relationship Patterns</h1>
+    <p>Personalized, evidence-based treatment and psychological assessments for adults, teens and couples.</p>
     <a href="https://drmariagutierrez.clientsecure.me" class="btn js-book">Book a Free Consultation</a>
   </div></div>
 </div>
-<script>
-(function(){
-  var el=document.getElementById('rotateWord'); if(!el) return;
-  var words=['grounded','understood','connected'];
-  var i=0;
-  setInterval(function(){
-    el.classList.add('out');
-    setTimeout(function(){ i=(i+1)%words.length; el.textContent=words[i]; el.classList.remove('out'); },450);
-  },2600);
-})();
-</script>
 <script>
 (function(){
   var canvas=document.getElementById('dandelion'); if(!canvas) return;
