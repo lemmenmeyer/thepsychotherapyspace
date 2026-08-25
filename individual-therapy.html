@@ -278,6 +278,24 @@ a.card:hover .card-img img{transform:scale(1.04)}
 .anim-card{position:relative;border:1px solid var(--line);border-radius:6px;overflow:hidden;aspect-ratio:4/4.6;background:#f4f3ec}
 .anim-card canvas{position:absolute;inset:0;width:100%;height:100%}
 
+
+/* Individual Therapy redesign */
+.svc-hero{background:var(--cream);padding:80px 0 6px}
+.svc-hero-in{max-width:720px}
+.svc-hero h1{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:clamp(34px,4.6vw,52px);line-height:1.14;margin:6px 0 10px}
+.svc-hero .sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);color:var(--sage);margin:0 0 20px}
+.svc-hero .lede{font-size:16px;line-height:1.8;max-width:620px;color:var(--text)}
+.svc-photo{padding:34px 0 4px}
+.svc-photo img{display:block;width:100%;max-width:480px;margin:0 auto;border-radius:12px;box-shadow:0 20px 46px rgba(74,74,74,.16)}
+.areas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:760px;margin:38px auto 0}
+.area-card{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 20px;text-decoration:none;transition:transform .3s ease,box-shadow .3s ease}
+.area-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(74,74,74,.08)}
+.area-card .ico{color:var(--ink);margin-bottom:14px;display:flex;justify-content:center}
+.area-card .ico svg{width:46px;height:46px}
+.area-card h3{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:22px;margin:0 0 8px;line-height:1.2}
+.area-card p{font-size:14px;line-height:1.55;color:var(--text);margin:0 0 14px}
+.area-card .arrow{font-size:19px;color:var(--sage);margin-top:auto;line-height:1}
+@media(max-width:600px){.svc-hero{padding:54px 0 4px}.area-card{padding:24px 14px}.area-card h3{font-size:19px}.area-card p{font-size:13px}}
 </style>
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -330,36 +348,41 @@ a.card:hover .card-img img{transform:scale(1.04)}
 
 <main>
 
-<div class="page-hero" style="--hero-img:url('assets/individual-hero.jpg')">
-  <div class="container"><div class="hero-inner"><span class="eyebrow" style="color:#fff">Services</span><h1>Individual Therapy</h1><p>A space that is entirely yours — to be heard without judgment and understand yourself more deeply.</p><a href="https://drmariagutierrez.clientsecure.me" class="btn js-book">Book a Free Consultation</a></div></div>
-</div>
-<section>
-  <div class="container split split-portrait">
-    <div class="prose reveal">
-      <span class="eyebrow">A space that is entirely yours</span>
-      <h2>Change is possible.</h2>
-      <p>Life can feel overwhelming at times, and it isn't always easy to make sense of what we're feeling or why certain patterns keep repeating. Individual therapy offers a dedicated space to slow down, be heard without judgment, and begin to understand yourself more deeply.</p>
-      <p>Whether you're navigating anxiety, depression, a difficult relationship, a painful past, or simply a sense that something isn't quite right, therapy can help you gain clarity, develop new ways of coping, and reconnect with what matters most to you.</p>
-      <p>Many people begin because they feel stuck, disconnected, or ready to grow — and that is reason enough.</p>
+<section class="svc-hero">
+  <div class="container">
+    <div class="svc-hero-in reveal">
+      <span class="eyebrow">Individual Therapy</span>
+      <h1>A space that is entirely yours</h1>
+      <p class="sub">Change is possible.</p>
+      <p class="lede">Individual therapy offers a dedicated space to slow down, understand what you're feeling, and recognize the patterns that may be keeping you stuck.</p>
+      <a href="https://drmariagutierrez.clientsecure.me" class="btn js-book" style="margin-top:26px">Book a Free Consultation</a>
     </div>
-    <div class="split-img reveal"><img src="assets/individual-office.jpg" alt="Dr. Mar&iacute;a del Carmen Gutierrez in her therapy office" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="svc-photo">
+  <div class="container">
+    <img class="reveal" src="assets/individual-office.jpg" alt="Dr. Mar&iacute;a del Carmen Gutierrez in her therapy office" width="1000" height="1333" loading="lazy">
   </div>
 </section>
 
 <section class="band">
-  <div class="container prose" style="max-width:860px">
-    <span class="eyebrow reveal">How Individual Therapy Can Help</span>
-    <h2 class="reveal">A collaborative process, adapted to you</h2>
-    <p class="reveal">Together, we'll explore not only what you're experiencing today, but also the experiences, relationships, and patterns that have shaped how you think, feel, and connect with others. My approach integrates psychodynamic psychotherapy, attachment-based work, and evidence-based treatments such as Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and <a href="emdr-therapy.html">EMDR</a>. Rather than applying a single method to every person, I adapt therapy to your unique needs, goals, and pace.</p>
-    <p class="reveal">Over time, many people experience:</p>
-    <ul class="checks reveal">
-      <li>A deeper understanding of themselves and their patterns</li>
-      <li>Greater emotional balance and resilience</li>
-      <li>Practical tools to manage stress and difficult emotions</li>
-      <li>Healthier, more fulfilling relationships</li>
-      <li>A stronger sense of confidence and self-compassion</li>
-      <li>More clarity about their values, choices, and direction in life</li>
-    </ul>
+  <div class="container" style="text-align:center">
+    <span class="eyebrow centered reveal">Areas I can help with</span>
+    <div class="areas-grid">
+      <a class="area-card reveal" href="therapy-for-anxiety.html"><span class="ico"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 54v-7c-6-3.2-10-9-10-16C13 20 21 12 32 12s19 8 19 19c0 5-2 9-5 12v11"/><path d="M27 27c2-2.2 6-2.2 8 .6 1.2 1.8.2 3.8-1.8 4.8-1.8.9-2.7 2-2.7 3.8"/><circle cx="30.6" cy="41" r="1.2"/></svg></span><h3>Anxiety</h3><p>Feel calmer and more in control.</p><span class="arrow">&rarr;</span></a>
+      <a class="area-card reveal" href="trauma-therapy.html"><span class="ico"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 9l19 6.5v13.5C51 41 42.5 49 32 55 21.5 49 13 41 13 29V15.5z"/><path d="M32 40.5c-3.6-2.7-7.2-5.4-7.2-9.5 0-2.5 1.9-4.3 4.2-4.3 1.6 0 2.7.9 3 1.9.3-1 1.4-1.9 3-1.9 2.3 0 4.2 1.8 4.2 4.3 0 4.1-3.6 6.8-7.2 9.5z"/></svg></span><h3>Trauma &amp; PTSD</h3><p>Process painful experiences safely.</p><span class="arrow">&rarr;</span></a>
+      <a class="area-card reveal" href="relationship-issues.html"><span class="ico"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="23" cy="23" r="7"/><circle cx="41" cy="23" r="7"/><path d="M11 47c0-6.6 5.4-12 12-12s12 5.4 12 12"/><path d="M29 47c0-6.6 5.4-12 12-12s12 5.4 12 12"/></svg></span><h3>Relationship Patterns</h3><p>Build healthier ways of connecting.</p><span class="arrow">&rarr;</span></a>
+      <a class="area-card reveal" href="emdr-therapy.html"><span class="ico"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 32c6-9 15-14.5 24-14.5S50 23 56 32c-6 9-15 14.5-24 14.5S14 41 8 32Z"/><circle cx="32" cy="32" r="7"/></svg></span><h3>EMDR Therapy</h3><p>Reduce distress connected to painful experiences.</p><span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container prose reveal" style="max-width:720px;margin:0 auto;text-align:center">
+    <span class="eyebrow centered">How Individual Therapy Can Help</span>
+    <h2>A collaborative process, adapted to you</h2>
+    <p>Every person's story is unique, and so is their path forward. Therapy is a collaborative process where we work together to understand your experiences, develop new tools, and create meaningful, lasting change &mdash; at a pace that feels right for you.</p>
   </div>
 </section>
 
