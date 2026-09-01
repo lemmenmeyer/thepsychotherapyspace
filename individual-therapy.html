@@ -118,7 +118,7 @@ a.card{display:block}
 .checks li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:600}
 
 /* Accordions / FAQ */
-.faq-grid{display:grid;grid-template-columns:4fr 7fr;gap:72px;align-items:start}
+.faq-grid{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:start}
 .faq-item{border-bottom:1px solid var(--line)}
 .faq-item>button{width:100%;background:none;border:none;text-align:left;font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink);padding:20px 40px 20px 0;cursor:pointer;position:relative}
 .faq-item>button::after{content:"";position:absolute;right:6px;top:50%;width:9px;height:9px;border-right:1.5px solid var(--sage);border-bottom:1.5px solid var(--sage);transform:translateY(-70%) rotate(45deg);transition:transform .3s ease}
@@ -280,14 +280,20 @@ a.card:hover .card-img img{transform:scale(1.04)}
 
 
 /* Individual Therapy redesign */
-.svc-hero{position:relative;background:linear-gradient(rgba(52,54,49,.48),rgba(52,54,49,.62)),url('assets/individual-hero.jpg') center/cover no-repeat;color:#fff;padding:104px 0}
-.svc-hero-in{max-width:640px;position:relative;z-index:1}
-.svc-hero .eyebrow{color:#fff}
-.svc-hero .eyebrow::after{background:#fff}
-.svc-hero h1{font-family:var(--serif);font-weight:400;color:#fff;font-size:clamp(34px,4.6vw,52px);line-height:1.14;margin:6px 0 10px;text-shadow:0 1px 16px rgba(30,32,28,.4)}
-.svc-hero .sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);color:#fff;margin:0 0 20px;opacity:.96}
-.svc-hero .lede{font-size:16px;line-height:1.8;max-width:560px;color:#fff;opacity:.96;text-shadow:0 1px 12px rgba(30,32,28,.35)}
-.svc-hero .btn{margin-top:26px}
+.intro{background:var(--cream);padding:84px 0 76px}
+.intro-grid{display:grid;grid-template-columns:1.05fr .9fr;gap:clamp(40px,5vw,72px);align-items:center}
+.intro-text h1{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:clamp(30px,4vw,45px);line-height:1.16;margin:6px 0 18px}
+.intro-text p{font-size:16px;line-height:1.8;max-width:480px;margin-bottom:20px;color:var(--text)}
+.intro-text .byline{font-size:14px;opacity:.85;margin:0 0 26px}
+.intro-photo img{width:100%;height:auto;display:block;border-radius:10px;box-shadow:0 20px 44px rgba(74,74,74,.16)}
+@media(max-width:860px){
+  .intro{padding:56px 0 44px}
+  .intro-grid{grid-template-columns:1fr;gap:32px}
+  .intro-photo{max-width:400px;margin:0 auto}
+  .intro-text{text-align:center}
+  .intro-text p{margin-left:auto;margin-right:auto}
+  .intro-text .eyebrow::after{margin-left:auto;margin-right:auto}
+}
 .areas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1080px;margin:38px auto 0}
 @media(max-width:880px){.areas-grid{grid-template-columns:repeat(2,1fr);max-width:600px}}
 .area-card{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 20px;text-decoration:none;transition:transform .3s ease,box-shadow .3s ease}
@@ -297,7 +303,7 @@ a.card:hover .card-img img{transform:scale(1.04)}
 .area-card h3{font-family:var(--serif);font-weight:400;color:var(--sage);font-size:22px;margin:0 0 8px;line-height:1.2}
 .area-card p{font-size:14px;line-height:1.55;color:var(--text);margin:0 0 14px}
 .area-card .arrow{font-size:19px;color:var(--sage);margin-top:auto;line-height:1}
-@media(max-width:600px){.svc-hero{padding:76px 0}.area-card{padding:24px 14px}.area-card h3{font-size:19px}.area-card p{font-size:13px}}
+@media(max-width:600px){.area-card{padding:24px 14px}.area-card h3{font-size:19px}.area-card p{font-size:13px}}
 </style>
 
   <link rel="icon" href="/favicon.png" sizes="any">
@@ -349,14 +355,19 @@ a.card:hover .card-img img{transform:scale(1.04)}
 
 <main>
 
-<section class="svc-hero">
+<section class="intro">
   <div class="container">
-    <div class="svc-hero-in reveal">
-      <span class="eyebrow">Individual Therapy</span>
-      <h1>A space that is entirely yours</h1>
-      <p class="sub">Change is possible.</p>
-      <p class="lede">Individual therapy offers a dedicated space to slow down, understand what you're feeling, and recognize the patterns that may be keeping you stuck.</p>
-      <a href="https://drmariagutierrez.clientsecure.me" class="btn js-book" style="margin-top:26px">Book a Free Consultation</a>
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <span class="eyebrow">Individual Therapy</span>
+        <h1>Therapy tailored to you, not just your symptoms.</h1>
+        <p>A collaborative space to understand what you're feeling, recognize patterns that keep repeating, and create meaningful, lasting change.</p>
+        <p class="byline">With Dr. Mar&iacute;a Guti&eacute;rrez, Licensed Clinical Psychologist</p>
+        <a href="https://drmariagutierrez.clientsecure.me" class="btn js-book">Book a Free Consultation</a>
+      </div>
+      <div class="intro-photo reveal">
+        <img src="assets/dr-gutierrez-closeup.jpg" width="556" height="670" alt="Dr. Mar&iacute;a Guti&eacute;rrez, licensed clinical psychologist">
+      </div>
     </div>
   </div>
 </section>
@@ -386,7 +397,7 @@ a.card:hover .card-img img{transform:scale(1.04)}
     <div class="reveal">
       <span class="eyebrow">What to Expect</span>
       <h2>Your therapy, at your pace</h2>
-      <p style="margin-top:18px">This is your space, and you remain in control of it.</p>
+      <p style="margin-top:18px">This is your space, and you remain in control of&nbsp;it.</p>
     </div>
     <div class="faq-list reveal">
       <div class="faq-item"><button aria-expanded="false">The first sessions</button><div class="faq-answer"><p>We begin by getting to know each other. I'll take time to understand your history, current concerns, and what brings you to therapy. Together, we'll begin to identify your goals and create a plan that feels right for you. There is no pressure to share more than you're ready to.</p></div></div>
