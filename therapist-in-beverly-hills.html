@@ -76,6 +76,11 @@ nav.main-nav a.btn:hover{color:#fff}
 nav.main-nav .dropdown a{display:block;padding:9px 22px;font-size:13.5px}
 .dropdown a:hover{background:var(--beige)}
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;z-index:60}.nav-book-mobile{display:none}
+
+.lang-switch{display:flex;align-items:center;border:1px solid rgba(74,74,74,.25);border-radius:999px;overflow:hidden}
+nav.main-nav .lang-switch a,nav.main-nav .lang-switch span{display:inline-block;padding:5px 11px;font-size:11px;font-weight:600;letter-spacing:.05em;line-height:1;color:var(--ink);opacity:.55}
+nav.main-nav .lang-switch a:hover{opacity:1}
+nav.main-nav .lang-switch .lang-active{background:var(--sage);color:#fff;opacity:1}
 .nav-toggle span{display:block;width:26px;height:2px;background:var(--ink);margin:6px 0;transition:.3s}
 .nav-toggle.open span{background:#fff}
 
@@ -220,6 +225,10 @@ footer a:hover{color:#fff}
   nav.main-nav .dropdown a{font-size:15px;opacity:.85;padding:7px 0}
   .has-drop>a::after{transform:rotate(45deg)}
   .nav-toggle{display:block}.nav-book-mobile{display:inline-block;margin-left:auto;margin-right:2px;padding:9px 18px;font-size:11px;letter-spacing:.1em}
+
+  .lang-switch{border-color:rgba(255,255,255,.35)}
+  nav.main-nav .lang-switch a,nav.main-nav .lang-switch span{color:rgba(255,255,255,.65);font-size:12px;padding:6px 12px}
+  nav.main-nav .lang-switch .lang-active{color:#fff;opacity:1}
   .split,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
   .footer-grid{grid-template-columns:1fr;gap:34px}
   .quote-inner{margin:0 auto;background:rgba(248,242,230,.8);padding:30px;border-radius:6px}
@@ -327,7 +336,8 @@ a.card:hover .card-img img{transform:scale(1.04)}
         </li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li><li><a href="therapist-in-beverly-hills-es.html">Espa&ntilde;ol</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="lang-switch" role="group" aria-label="Language / Idioma"><span class="lang-active">EN</span><a href="therapist-in-beverly-hills-es.html">ES</a></li>
         <li><a href="https://drmariagutierrez.clientsecure.me" class="btn js-book">Book</a></li>
       </ul>
     </nav>
